@@ -154,8 +154,8 @@ def getTactics1(prompt, debug = False):
             
             
     return word.title()
-    
-    
+   
+   
 def isSwear(word, debug = False):
     if debug: print("isSwear Function")
     if word.lower() in swearList:
