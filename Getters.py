@@ -160,7 +160,7 @@ def getGreet1(prompt, debug = False):
 
     goodInput = False
     
-    greet = ["Ggs",
+    greet = ["ggs",
              "roast him"]
     
     while not goodInput:
