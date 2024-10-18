@@ -53,6 +53,8 @@ def Story1(debug = False):
         out += " During the game, I kept the ball the whole time. We scored some points due to my crazy shots. We lost but it was a good game for me. "
     if tactics1 == "2":
         out += "  I passed the ball to " + friendName1 + " pretty much the whole match, and god he sucks at " + sport1 + "."
+    if greet1 == "Roast him":
+        out += "I 
     
     
     return out

@@ -162,6 +162,27 @@ def isSwear(word, debug = False):
         return True
     else:
         return False
+        
+def getGreet1(prompt, debug = False):
+    if debug: print("getGreet Function")
+
+    goodInput = False
+    
+    greet = ["GGs",
+              "Roast him"]
+    
+    while not goodInput:
+        word = input(prompt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that ")
+        elif word.lower() not in greet:
+            goodInput = False
+            print ("Sorry, I don't get what you mean. ")
+            
+            
+    return word
 
 swearList = ["poop", 
              "pee",
