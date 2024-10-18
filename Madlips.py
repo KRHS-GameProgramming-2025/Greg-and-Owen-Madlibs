@@ -23,10 +23,10 @@ def Madlips(debug = False):
             print("\n")
             input("Press enter to continue")
             
-		elif choice == "2":
-			print(Story2())
-			print("\n")
-			input("Press enter to continue")
+        elif choice == "2":
+             print(Story2())
+             print("\n")
+             input("Press enter to continue")
 
 
 
