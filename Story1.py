@@ -10,7 +10,7 @@ def Story1(debug = False):
     person2 = getPerson2("Enter another person |choices: Kobe Bryant, Elon Musk, Ronaldo: ", debug)
     music1 = getMusic1("Enter a music: |choices: Basketball Music, Alphabet, C++: ", debug)
     tactics1 = getTactics1("Select tactic: |choice1: Have the ball, choice2: Give the ball to " + friendName1 + ". Please enter the number. ", debug)
-    greet1 = getGreet1("Say something nice to your opponent :D | choice1: GGs, choice2: Roast him. ", debug)
+    greet1 = getGreet1("Say something nice to your opponent :D | choice1: ggs, choice2: roast him. ", debug)
     
     
     out = "\n"
@@ -50,11 +50,13 @@ def Story1(debug = False):
     if music1 != "Basketball Music":
         out += " a popular song. Which is cool."
     if tactics1 == "1":
-        out += " During the game, I kept the ball the whole time. We scored some points due to my crazy shots. We lost but it was a good game for me. "
+        out += " During the game, I kept the ball the whole time. We scored some points due to my crazy shots. We won and it was a good game for me. "
     if tactics1 == "2":
-        out += "  I passed the ball to " + friendName1 + " pretty much the whole match, and god he sucks at " + sport1 + "."
-    if greet1 == "Roast him":
-        out += "I 
+        out += "  I passed the ball to " + friendName1 + " pretty much the whole match, and god he sucks at " + sport1 + "." + " BTW, "
+    if greet1 == "Ggs":
+        out += " Good game man. " + " I said. "
+    if greet1 == "roast him":
+        out += " *Censored* " + " I said. "
     
     
     return out

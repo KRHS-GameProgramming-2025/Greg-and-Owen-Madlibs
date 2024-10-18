@@ -155,28 +155,20 @@ def getTactics1(prompt, debug = False):
         if isSwear(word, debug):
             goodInput = False
             print ("Don't use language like that ")
-        elif word.title() not in tactics:
+        elif word not in tactics:
             goodInput = False
             print ("Sorry, I don't know that song. ")
             
             
     return word.title()
-   
-   
-def isSwear(word, debug = False):
-    if debug: print("isSwear Function")
-    if word.lower() in swearList:
-        return True
-    else:
-        return False
-        
+    
 def getGreet1(prompt, debug = False):
     if debug: print("getGreet Function")
 
     goodInput = False
     
-    greet = ["GGs",
-              "Roast him"]
+    greet = ["ggs",
+             "roast him"]
     
     while not goodInput:
         word = input(prompt)
@@ -187,9 +179,21 @@ def getGreet1(prompt, debug = False):
         elif word.lower() not in greet:
             goodInput = False
             print ("Sorry, I don't get what you mean. ")
+
+        
             
             
-    return word
+    return word.title()
+    
+    
+def isSwear(word, debug = False):
+    if debug: print("isSwear Function")
+    if word.lower() in swearList:
+        return True
+    else:
+        return False
+        
+
 
 swearList = ["poop", 
              "pee",
