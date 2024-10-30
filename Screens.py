@@ -12,7 +12,7 @@ def TittleScreen(debug = False):
     s += "|                                           By                                  |\n"
     s += "|                                                                               |\n"
     s += "|                                                                               |\n"
-    s += "|                             Greg Huang & Owen Theis                           |\n"
+    s += "|                             Gregoria Rizzler & Owen Theis                     |\n"
     s += "|                                                                               |\n"
     s += "|                                                                               |\n"
     s += "|                                                                               |\n"
@@ -42,7 +42,7 @@ def MainMenu(debug = False):
     s += "|                                                                                |\n"
     s += "|                                                                                |\n"
     s += "|                                                                                |\n"
-    s += "|                                                                                |\n"
+    s += "|                     👁️   I know where you live  👁️                             |\n"
     s += "|                                                                                |\n"
     s +=  "---------------------------------------------------------------------------------\n"
     

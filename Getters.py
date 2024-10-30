@@ -27,6 +27,14 @@ def getMenuOption(debug = False):
             option =="story2"):
                 option = "2"
                 goodInput = True
+                
+                
+        elif (option == "3" or 
+            option == "three" or
+            option == "story 3" or 
+            option =="story3"):
+                option = "3"
+                goodInput = True
             
         else:
             print("please make a valid choice")
@@ -184,6 +192,90 @@ def getGreet1(prompt, debug = False):
             
             
     return word.lower()
+    
+def getReaction1(prompt, debug = False):
+    if debug: print("getReaction Function")
+
+    goodInput = False
+    
+    reaction = ["happy",
+                "mad"]
+    
+    while not goodInput:
+        word = input(prompt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that ")
+        elif word.lower() not in reaction:
+            goodInput = False
+            print ("Sorry, a person only have 2 emotions. ")
+
+        
+            
+            
+    return word.lower()
+    
+    
+def getMyname(prompt, debug = False):
+    if debug: print("getMyname Function")
+
+    goodInput = False
+    
+    while not goodInput:
+        word = input(prompt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that ")
+        
+    return word
+    
+    
+def getMonster(prompt, debug = False):
+    if debug: print("getMonster Function")
+
+    goodInput = False
+    
+    monster = ["dragon"]
+    
+    while not goodInput:
+        word = input(prompt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that ")
+        elif word.lower() not in monster:
+            goodInput = False
+            print ("You gotta pick the dragon man, it's cool. ")
+            
+            
+    return word.lower()
+    
+    
+def getWeapon(prompt, debug = False):
+    if debug: print("getWeapon Function")
+
+    goodInput = False
+    
+    weapon = ["long sword",
+              "big sword",
+              "bow",
+              "hammer",
+              "microphone"]
+    
+    while not goodInput:
+        word = input(prompt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that ")
+        elif word.title() not in weapon:
+            goodInput = False
+            print ("You gotta pick a weapon here bro, you're too broke to buy one. ")
+            
+            
+    return word.title()
     
     
 def isSwear(word, debug = False):
