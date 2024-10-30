@@ -258,11 +258,11 @@ def getWeapon(prompt, debug = False):
 
     goodInput = False
     
-    weapon = ["long sword",
-              "big sword",
-              "bow",
-              "hammer",
-              "microphone"]
+    weapon = ["Long Sword",
+              "Big Sword",
+              "Bow",
+              "Hammer",
+              "Microphone"]
     
     while not goodInput:
         word = input(prompt)
@@ -276,7 +276,28 @@ def getWeapon(prompt, debug = False):
             
             
     return word.title()
+
+def getPotion(prompt, debug = False):
+    if debug: print("getWeapon Function")
+
+    goodInput = False
     
+    potion = ["invisibility",
+              "strength",
+              "speed"]
+    
+    while not goodInput:
+        word = input(prompt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that ")
+        elif word.lower() not in potion:
+            goodInput = False
+            print ("We don't have that here ")
+            
+            
+    return word.lower()    
     
 def isSwear(word, debug = False):
     if debug: print("isSwear Function")
