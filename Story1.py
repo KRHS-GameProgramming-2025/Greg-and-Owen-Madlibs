@@ -47,16 +47,25 @@ def Story1(debug = False):
     
     if music1 == "Basketball Music":
         out += " a song made out of footsteps and basketball bouncing sounds. Which is fire dammmnnn🔥🔥🔥"
-    if music1 != "Basketball Music":
+    else music1:
         out += " a popular song. Which is cool."
-    if tactics1 == "1":
-        out += " During the game, I kept the ball the whole time. We scored some points due to my crazy shots. We won and it was a good game for me. "
-    if tactics1 == "2":
-        out += "  I passed the ball to " + friendName1 + " pretty much the whole match, and god he sucks at " + sport1 + "." + " BTW, "
-    if greet1 == "Ggs":
-        out += " Good game man. " + " I said. "
-    if greet1 == "roast him":
-        out += " *Censored* " + " I said. "
     
+        
+    if tactics1 == "1":
+        out += " During the game, I kept the ball the whole time. We scored some points due to my crazy shots. We won and it was a good game for me. Therefore..."
+    elif tactics1 == "2":
+        out += "  I passed the ball to " + friendName1 + " pretty much the whole match, and god he sucks at " + sport1 + "."
+    else:
+        print("!!!!! BAD OPTION !!!!!, tactics1)
+    
+    if greet1 == "ggs":
+        out += " Good game man. " + " I said. "
+    elif greet1 == "roast him":
+        out += " *Censored* " + " I said. " + " WTH DON'T SAY THAT MAN 😭😭😭 yelled " + friendName1 + ". "
+    else:
+        print("!!!!! BAD OPTION !!!!!, greet1)
+    
+    
+   
     
     return out

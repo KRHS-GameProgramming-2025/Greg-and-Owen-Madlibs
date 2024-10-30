@@ -183,7 +183,7 @@ def getGreet1(prompt, debug = False):
         
             
             
-    return word.title()
+    return word.lower()
     
     
 def isSwear(word, debug = False):
