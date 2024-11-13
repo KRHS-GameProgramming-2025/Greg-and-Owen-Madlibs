@@ -3,6 +3,7 @@ from Getters import*
 from Story1 import*
 from Story2 import*
 from Story3 import*
+from Story4 import*
 
 def Madlips(debug = False):
     if debug: print("welcome to debug")

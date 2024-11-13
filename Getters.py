@@ -56,6 +56,20 @@ def getWord(prompt, debug = False):
         
     return word
     
+def getWord2(prompt, debug = False):
+    if debug: print("getWord2 Function")
+
+    goodInput = False
+    
+    while not goodInput:
+        word = input(prompt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that ")
+        
+    return word
+    
     
 def getSport(prompt, debug = False):
     if debug: print("getSport Function")
@@ -229,7 +243,7 @@ def getMyname(prompt, debug = False):
             goodInput = False
             print ("Don't use language like that ")
         
-    return word
+    return word.title()
     
     
 def getMonster(prompt, debug = False):
@@ -270,7 +284,7 @@ def getWeapon(prompt, debug = False):
         if isSwear(word, debug):
             goodInput = False
             print ("Don't use language like that ")
-        elif word.title() not in weapon:
+        elif word.lower() not in weapon:
             goodInput = False
             print ("You gotta pick a weapon here bro, you're too broke to buy one. ")
             
@@ -403,4 +417,5 @@ swearList = ["poop",
              "nigger",
              "negro"
              "damn",
-             "nazi"]
+             "nazi",
+             "communist"]
