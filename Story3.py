@@ -12,4 +12,4 @@ def Story3(debug = False):
     
     
     out = "\n"
-    out += " Wake up, warrior. The king is waiting." + 
+    out += " Wake up, warrior. The king is waiting."
