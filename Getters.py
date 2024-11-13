@@ -282,8 +282,7 @@ def getPotion(prompt, debug = False):
 
     goodInput = False
     
-    potion = ["invisibility",
-              "strength",
+    potion = ["strength",
               "speed"]
     
     while not goodInput:
@@ -295,6 +294,69 @@ def getPotion(prompt, debug = False):
         elif word.lower() not in potion:
             goodInput = False
             print ("We don't have that here ")
+            
+            
+    return word.lower()    
+    
+def getTeammate(prompt, debug = False):
+    if debug: print("getWeapon Function")
+
+    goodInput = False
+    
+    teammate = ["tank",
+                "copyman"]
+    
+    while not goodInput:
+        word = input(prompt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that ")
+        elif word.lower() not in teammate:
+            goodInput = False
+            print ("Who's that?? ")
+            
+            
+    return word.lower()    
+    
+
+def getSong(prompt, debug = False):
+    if debug: print("getSong Function")
+
+    goodInput = False
+    
+    song = ["1"]
+    
+    while not goodInput:
+        word = input(prompt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that ")
+        elif word.lower() not in song:
+            goodInput = False
+            print ("What are you hiding from? ")
+            
+            
+    return word.lower()    
+    
+def getDodge(prompt, debug = False):
+    if debug: print("getDodge Function")
+
+    goodInput = False
+    
+    dodge = ["1",
+             "2"]
+    
+    while not goodInput:
+        word = input(prompt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that ")
+        elif word.lower() not in dodge:
+            goodInput = False
+            print ("Who's that?? ")
             
             
     return word.lower()    

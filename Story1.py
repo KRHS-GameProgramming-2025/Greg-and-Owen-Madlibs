@@ -85,6 +85,6 @@ def Story1(debug = False):
     
     
     if reaction1 == "mad":
-        out += person2 + " is mad as hell...He yelled: " + " '⚡🗲🔥👹闪电旋风劈🔥🗲⚡！！！！'" + " He ran towards us. 'NAH WHY HE SPEAkING CHINESE!!???'😭😭😭 " + friendName1 + " screamed and we fleed as fast as posible"
+        out += person2 + " is mad as hell...He yelled: " + " '⚡🗲🔥👹闪电旋风劈🔥🗲⚡！！！！'" + " and ran towards us. 'NAH WHY HE SPEAkING CHINESE!!???'😭😭😭 " + friendName1 + " screamed and we fleed as fast as posible"
     
     return out
