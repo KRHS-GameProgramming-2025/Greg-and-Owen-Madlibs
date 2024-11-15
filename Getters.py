@@ -245,6 +245,29 @@ def getMyname(prompt, debug = False):
         
     return word.title()
     
+def getPersonName (prompt, debug = False):
+    if debug: print("getPersonName Function")
+    
+    goodInput = False
+    
+    while not goodInput:
+        word = input(prompt)
+        goodInput = Trie
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that. ")
+
+def getPersonName2 (prompt, debug = False):
+    if debug: print("getFriendName Function")
+    
+    goodInput = False
+    
+    while not goodInput:
+        word = input(prompt)
+        goodInput = Trie
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that. ")
     
 def getMonster(prompt, debug = False):
     if debug: print("getMonster Function")
